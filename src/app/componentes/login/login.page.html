@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <div class="ion-text-center"></div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <img class="icon" src="assets/icon/chat.svg" alt="">
+  <ion-item>
+    <ion-label position="floating">Correo electrónico</ion-label>
+    <ion-input type="email" name="email" [(ngModel)]= "email" id=""></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña
+    </ion-label>
+    <ion-input type="password" name="password" [(ngModel)]= "password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)= "verificarCorreo()" >Entrar</ion-button>
+
+</ion-content>
